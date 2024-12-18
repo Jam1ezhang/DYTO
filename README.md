@@ -55,7 +55,7 @@ git lfs clone https://huggingface.co/liuhaotian/llava-v1.6-34b
 
 The QA files for most datasets can be downloaded from [here](https://github.com/imagegridworth/IG-VLM/tree/main/data). For VideMME dataset, please download the QA files from [here](https://video-mme.github.io/).
 
-You should prepare the QA files for the datasets you want to use.The expmple of the QA file is in the `playground/gt_qa_files/` folder.
+You should prepare the QA files for the datasets you want to use. The expmple of the QA file is in the `playground/gt_qa_files/` folder.
 
 ```bash
 python scripts/data/prepare_${DATASET}_qa_file.py --qa_file $PATH_TO_CSV_FILE
