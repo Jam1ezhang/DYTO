@@ -230,15 +230,15 @@ class LlavaMetaForCausalLM(ABC):
             image_features = image_features.view(T * N, D)
         elif temporal_aggregation == "spatial_tome_finch_dynamic_all_frms":
             # FINCH
-            clus_image_features = self.finch_clusterv2(image_features,tw_finch = True)
+            clus_image_features = self.finch_cluster(image_features,tw_finch = True)
             if clus_image_features.shape[0] >25:
                 num = 25
-                indices = np.linspace(0, clus_image_features.shape[0] - 1, num, dtype=int)  # 保证只取 25 个索引
+                indices = np.linspace(0, clus_image_features.shape[0] - 1, num, dtype=int)  # Ensure only 25 indices are taken
                 clus_image_features = clus_image_features[indices]
             T,N,D = clus_image_features.shape
             if T<=12:
                 r_merge_list=[]
-                merge_ratio = 576-(3680 // T)
+                merge_ratio = 576 - (3680 // T)  # 576 is the number of patches in a frame. 3680 is the fixed length of video tokens before LLM input
                 r_merge_list.append(merge_ratio if merge_ratio<=288 else 288)
             else:
                 r_merge_list=[288]

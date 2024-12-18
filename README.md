@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎥 <span style="font-variant: small-caps;">DyTo</span>
+# 🎥 DyTo
 
 **A Training-Free Method for Zero-Shot Video Understanding**
 
@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-<span style="font-variant: small-caps;">DyTo</span> is a dynamic token merging framework for zero-shot video understanding that optimizes token efficiency while preserving scene details through hierarchical frame selection and bipartite token merging.
+DyTo is a **Dy**namic **To**ken merging framework for zero-shot video understanding that optimizes token efficiency while preserving scene details through hierarchical frame selection and bipartite token merging.
 
 Our paper: [Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding](https://arxiv.org/abs/2411.14401)
 
