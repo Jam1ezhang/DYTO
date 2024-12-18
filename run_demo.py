@@ -117,14 +117,14 @@ def parse_args():
     Parse command-line arguments.
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument("--video_path", help="input video path",default="/home/user/gptdata/zym/codespace/FreesfVA/video_samples/13974254491.mp4")
-    parser.add_argument("--model_path", help="LLaVA model path", type=str,default="/home/user/gptdata/zym/codespace/FreesfVA/ckpts/llava-v1.6-7b")
+    parser.add_argument("--video_path", help="input video path",default="")
+    parser.add_argument("--model_path", help="LLaVA model path", type=str,default="")
     parser.add_argument("--question", help="Input question and prompt", type=str,default="Describe what happens in this video in detail.")
     parser.add_argument("--conv_mode", type=str, required=False, default="image_seq_v3")
     parser.add_argument("--num_frames", type=int, default=100)
     parser.add_argument("--input_structure", type=str, default="image_seq")
     parser.add_argument("--image_aspect_ratio", type=str, default="resize")
-    parser.add_argument("--temporal_aggregation", type=str, default="spatial_tome_twfinchv2_dynamic_frms_dynamicmax")
+    parser.add_argument("--temporal_aggregation", type=str, default="spatial_tome_finch_dynamic_all_frms")
     parser.add_argument("--rope_scaling_factor", type=int, default=2)
     return parser.parse_args()
 
@@ -132,10 +132,3 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     run_inference(args)
-
-# d-2C_N5anww_1_3 Describe what happens in this video in detail.
-# what is a running dog hitting on
-#  who is folding a square paper piece?
-# bXsKw3TOQXs_30_55
-    
-    # In this video, there is a scene where a person is pouring water into a large bowl. The context of the video appears to be a social gathering or party, where a group of people is standing around a kitchen counter, watching and possibly waiting for the food to be served. The person pouring water is wearing a pink shirt and is standing next to the large bowl. The atmosphere seems to be casual and friendly, with people engaged in conversation and anticipation for the food to be ready.
