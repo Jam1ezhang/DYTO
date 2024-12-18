@@ -76,7 +76,7 @@ Key parameters in yaml config:
 - `SCRIPT`: Task selection
 - `DATA_DIR` & `CONV_MODE`: Data paths and prompts
 - `NUM_FRAMES`: Frame sampling count
-- `TEMPORAL_AGGREGATION`: Slow and Fast pathway settings
+- `TEMPORAL_AGGREGATION`: Dynamic Token Merge pathway settings
 
 ## 🔄 Running the Model
 
@@ -90,7 +90,7 @@ python run_inference.py --exp_config $PATH_TO_CONFIG_FILE
 ```bash
 python run_demo.py \
     --video_path $PATH_TO_VIDEO \
-    --model_path $PATH_TO_LLAVA_MODEL \
+    --model_path $PATH_TO_YOUR_MODEL \
     --question "Describe this video in details"
 ```
 
