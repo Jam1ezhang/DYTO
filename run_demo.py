@@ -11,10 +11,10 @@ sys.path.insert(0, os.path.join(Path(__file__).parent.as_posix(), "slowfast_llav
 import torch
 import time
 
-from slowfast_llava.llava.constants import IMAGE_TOKEN_INDEX
-from slowfast_llava.llava.model.builder import load_pretrained_model
-from slowfast_llava.llava.utils import disable_torch_init
-from slowfast_llava.llava.mm_utils import tokenizer_image_token, process_images, get_model_name_from_path
+from dyto.llava.constants import IMAGE_TOKEN_INDEX
+from dyto.llava.model.builder import load_pretrained_model
+from dyto.llava.utils import disable_torch_init
+from dyto.llava.mm_utils import tokenizer_image_token, process_images, get_model_name_from_path
 
 from dataset import load_video
 from prompt import get_prompt
