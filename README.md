@@ -103,9 +103,8 @@ outputs/
 └── logs/          # Evaluation results
 ```
 
-
 ## 📚 Citation
-
+If you are using the data/code/model provided here in a publication, please cite our paper:
 ```bibtex
 @article{zhang2024beyond,
   title={Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding},
