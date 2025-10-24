@@ -7,7 +7,7 @@
 </div>
 
 ## 📣 News
-- **_(2025.6.29)_**: ✨Our paper is accepted to ICCV2025❗️
+- **_(2025.06.29)_**: ✨Our paper is accepted to ICCV2025❗️
 - **_(2024.10.15)_**: ✨Code has been released❗️
 
 
