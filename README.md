@@ -1,8 +1,12 @@
 <div align="center">
 
-# 🎥 DyTo
+# 🎥 [ICCV2025] DyTo
 
 **A Training-Free Method for Zero-Shot Video Understanding**
+
+## 📣 News
+- **_(2025.6.29)_**: ✨Our paper is accepted to ICCV2025❗️
+- **_(2024.10.15)_**: ✨Code has been released❗️
 
 </div>
 
@@ -106,10 +110,12 @@ outputs/
 ## 📚 Citation
 If you are using the data/code/model provided here in a publication, please cite our paper:
 ```bibtex
-@article{zhang2024beyond,
-  title={Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding},
-  author={Zhang, Yiming and Zhao, Zhuokai and Chen, Zhaorun and Ding, Zenghui and Yang, Xianjun and Sun, Yining},
-  journal={arXiv preprint arXiv:2411.14401},
-  year={2024}
+@InProceedings{Zhang_2025_ICCV,
+    author    = {Zhang, Yiming and Zhao, Zhuokai and Chen, Zhaorun and Ding, Zenghui and Yang, Xianjun and Sun, Yining},
+    title     = {Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {22046-22055}
 }
 ```
